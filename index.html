@@ -2,56 +2,104 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>张金鹏的个人简介</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张金鹏个人简介</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
 
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
 
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
+    header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://picsum.photos/1200/300');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
 
-        h1,
-        h2 {
-            color: #333;
-        }
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
 
-        p {
-            line-height: 1.6;
-        }
-    </style>
+    header p {
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      color: #007BFF;
+      border-bottom: 2px solid #007BFF;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .image-container img {
+      width: 48%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <h1>张金鹏的个人简介</h1>
-    </header>
-    <section>
-        <h2>个人基本信息</h2>
-        <p>我叫张金鹏，是西南民族大学的一名大二学生，目前就读于软件工程专业。在学习过程中，我努力钻研专业知识，积极参与各种实践项目，不断提升自己的编程能力和解决问题的能力。</p>
-    </section>
-    <section>
-        <h2>西南民族大学历史</h2>
-        <p>西南民族大学有着悠久且辉煌的历史。学校前身为西南民族学院，创建于1950年，是新中国最早建立的民族院校之一。建校初期，学校在党和国家的关怀下，汇聚了一批优秀的师资力量，克服了重重困难，逐步建立起了较为完善的教学体系，为民族地区培养了大量优秀人才。</p>
-        <p>随着时间的推移，西南民族大学不断发展壮大。学校拓展了学科门类，涵盖了文、史、哲、经、管、法、教、理、工、农、医、艺等多个学科领域。同时，学校积极推进国际化办学，与多所海外高校开展合作交流，为学生提供了广阔的国际视野和学习机会。</p>
-        <p>如今，西南民族大学已成为一所具有鲜明民族特色的综合性大学，在民族学、畜牧学等特色学科领域取得了显著的成就，并且致力于为国家的民族团结和社会发展做出更大的贡献。</p>
-    </section>
+  <header>
+    <h1>张金鹏</h1>
+    <p>西南民族大学软件工程专业大二学生</p>
+  </header>
+  <div class="container">
+    <div class="section">
+      <h2>个人简介</h2>
+      <p>我叫张金鹏，就读于西南民族大学软件工程专业，在过去的两年学习生涯中，我系统地学习了 C++、Java 等编程语言，以及数据结构、操作系统等核心课程。通过课程实践与项目开发，我不仅夯实了专业基础，更培养了独立思考与解决复杂问题的能力。</p>
+    </div>
+    <div class="section">
+      <h2>对软件工程专业的展望</h2>
+      <p>在数字化浪潮席卷全球的时代，软件工程已然成为推动社会变革的核心力量。我坚信，未来的软件工程将朝着智能化、集成化与跨领域融合的方向发展。人工智能与机器学习技术将深度嵌入软件开发流程，大幅提升开发效率与软件质量；云计算与边缘计算的协同，会让软件服务更高效、更灵活。</p>
+      <p>我渴望在未来深入钻研人工智能与软件工程的交叉领域，探索 AI 辅助编程、智能算法优化等前沿方向。同时，我也期待能够参与到大型软件项目的研发中，将理论知识转化为实际生产力，用代码构建更美好的数字世界。</p>
+    </div>
+    <div class="section">
+      <h2>学习与生活风采</h2>
+      <div class="image-container">
+        <img src="https://picsum.photos/500/300" alt="学习场景">
+        <img src="https://example.com/your-valid-image-url.jpg" alt="校园生活"> <!-- 请替换为有效的图片链接 -->
+      </div>
+      <p>图 1：专注学习代码  |  图 2：活力校园生活</p>
+    </div>
+  </div>
 </body>
 
 </html>
